@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('includes/head', { pageTitle: job.name }) %>
+  <script src="/scripts/reviews.js" defer></script>
+  <style>
+    /* ... tvoj štýl pre job-details atď. ... */
+  </style>
+</head>
+<body class="bg-light">
+  <%- include('includes/header') %>
+
+  <main class="container my-5">
+    <div class="job-details">
+      <h1><%= job.name %></h1>
+      <p><strong>Description:</strong> <%= job.description %></p>
+      <p><strong>Salary:</strong> <%= job.salary %></p>
+      <p><a href="<%= job.website %>" target="_blank">Visit Website</a></p>
+    </div>
+
+    <section class="mt-5">
+      <h2>All Jobs</h2>
+      <button id="reviewLoadButton" data-job_id="<%= job.id %>">
+        Load All Jobs
+      </button>
+      <div id="reviewSection" class="mt-3"></div>
+    </section>
+  </main>
+
+  <%- include('includes/footer') %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

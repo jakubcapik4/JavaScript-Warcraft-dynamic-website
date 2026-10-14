@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head', { pageTitle: 'Visit Us!' }) %>
+  </head>
+  <body class="bg-light">
+    <!-- Header -->
+    <%- include("includes/header.ejs") %>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+      <div class="row g-4">
+        <!-- Flexbox 1 -->
+        <div class="col-12 bg-secondary bg-opacity-50 p-4 rounded shadow-sm border border-5">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-8 text-center">
+              <h1 class="nadpisy">Early Careers</h1>
+              <p>
+                Whether you're wanting to be a part of our in-depth 12-week internship program or an exciting job right out of college, see why Blizzard could be the place for you.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flexbox 2 -->
+        <div class="col-12 col-md-6 bg-secondary bg-opacity-50 p-4 rounded shadow-sm border border-5">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <ul class="list-group">
+                <% jobs.forEach(r => { %>
+                  <li class="visitUs-item list-group-item list-group-item-action <% if (r.id === 'analytics-and-research' || r.id === 'game-design' || r.id === 'ux-visual-design') { %>active<% } %>" 
+                      style="transition: all 0.3s ease;" 
+                      onmouseover="this.style.backgroundColor='#e9ecef'; this.style.transform='scale(1.02)';"
+                      onmouseout="this.style.backgroundColor=''; this.style.transform='scale(1)';"
+                      aria-current="true">
+                    <article>
+                      <h2><%= r.name %></h2>
+                      <div class="visitUs-actions">
+                        <a href="/visitUs/<%= r.id %>">View job details</a>
+                      </div>
+                    </article>
+                  </li>
+                <% }) %>
+              </ul>
+            </div>
+            <div class="col-md-4 text-center">
+              <img src="images/BattleNet.jpg" alt="WoW" class="img-fluid rounded" style="max-width: 200px" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Registrácia -->
+        <div class="col-12 col-md-6 bg-secondary bg-opacity-50 p-4 rounded shadow-sm align-items-center border border-5">
+          <h2 class="text-center nadpisy">Registration</h2>
+          <% if (inputData.errorMessage) { %>
+            <div class="alert alert-danger" role="alert">
+              <%= inputData.errorMessage %>
+            </div>
+          <% } %>
+          <form id="registrationForm" action="/signUp" method="POST">
+            <div class="mb-3">
+              <input type="text" class="form-control" name="name" placeholder="Name & Surname" value="<%= inputData.name || '' %>" required/>
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" name="password" placeholder="Password" value="<%= inputData.password || '' %>" required/>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" name="email" placeholder="E-mail" value="<%= inputData.email || '' %>" required/>
+            </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control" name="phone" placeholder="Phone Number" value="<%= inputData.phone || '' %>" required/>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" name="address" placeholder="Address" value="<%= inputData.address || '' %>" required/>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" name="country" placeholder="Country" value="<%= inputData.country || '' %>" required/>
+            </div>
+            <div class="d-flex justify-content-center gap-2">
+              <button type="submit" class="btn btn-warning fw-bold w-50">Submit</button>
+              <a href="/login" class="btn btn-outline-warning fw-bold btn-sm px-3">Login</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Submitted Data -->
+        <div id="submittedData" class="col-12 bg-secondary bg-opacity-50 p-4 rounded shadow-sm mt-4 border border-5 d-none">
+          <h2 class="text-center" style="color: green;">Submitted Data</h2>
+          <p><strong>Name & Surname:</strong> <span id="nameDisplay"></span></p>
+          <p><strong>Password</strong> <span id="passwordDisplay"></span></p>
+          <p><strong>E-mail:</strong> <span id="emailDisplay"></span></p>
+          <p><strong>Phone Number:</strong> <span id="phoneDisplay"></span></p>
+          <p><strong>Address:</strong> <span id="addressDisplay"></span></p>
+          <p><strong>Country:</strong> <span id="countryDisplay"></span></p>
+        </div>
+      </div> 
+    </main>
+
+    <!-- Footer -->
+    <%- include("includes/footer.ejs") %>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

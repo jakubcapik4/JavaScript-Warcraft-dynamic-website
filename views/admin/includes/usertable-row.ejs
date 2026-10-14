@@ -1,0 +1,20 @@
+<td>
+  <% if (h.id === "action") { %>
+    <div class="divButton">
+      <!-- Edit -->
+      <a href="/admin/user/<%= user.user_id %>/edit"
+         style="font-size: 24px">
+        <i class="fa fa-edit"></i>
+      </a>
+      <!-- Delete -->
+      <span class="delete-btn"
+            style="font-size: 24px"
+            data-userid="<%= user.user_id %>"
+            data-username="<%= user.name %>">
+        <i class="fa fa-trash"></i>
+      </span>
+    </div>
+  <% } else { %>
+    <%= user[h.id] %>
+  <% } %>
+</td>

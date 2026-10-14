@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../includes/head.ejs', { pageTitle: 'Subscription Confirmation' }) %>
+  </head>
+  <body class="bg-light">
+    <!-- Header -->
+
+    <%- include("../includes/header.ejs") %>
+
+    <!-- Main Content -->
+    <main>
+      <h1>Edit user</h1>
+      <form action="/admin/user/<%= user.user_id %>/edit" method="post">
+        <div class="form-control">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value="<%= user.name %>"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            value="<%= user.email %>"
+            required
+          />
+        </div>
+        <button onclick="history.back()">Go back</button>
+        <button>Update user</button>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    
+    <%- include("../includes/footer.ejs") %>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

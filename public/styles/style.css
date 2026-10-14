@@ -1,0 +1,239 @@
+/* Custom štýl */
+.custom-bg {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00000048;
+  }
+  
+  header .btn,
+  footer .btn {
+    font-size: 1.1rem;
+    padding: 8px 50px;
+  }
+  
+  /* Prispôsobenie tlačidiel */
+  button {
+    background-color: #ffd700;
+    color: blue;
+    font-weight: bold;
+    border: none;
+    border-radius: 11px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Bootstrap warning tlačidlá */
+  .btn-warning {
+    background-color: #ffd700;
+    color: blue;
+    font-weight: bold;
+    align-items: center;
+  }
+  
+  /* Štýly formulára */
+  form input,
+  form button {
+    width: 50%;
+    max-width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  
+  /* Responzívne mriežky */
+  @media (max-width: 768px) {
+    header > nav,
+    footer > nav {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    header button,
+    footer button {
+      width: 90%;
+      margin: 5px auto;
+    }
+  }
+  /* Custom štýl */
+/*.custom-bg {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00000048;
+  }*/
+  /* --------------------------------------------------------------2. Stránka--------------------------------------------------------------------------------------  */
+  header .btn,
+  footer .btn {
+    font-size: 1.1rem;
+    padding: 8px 50px;
+  }
+  
+  /* Prispôsobenie tlačidiel */
+  button {
+    background-color: #ffd700;
+    color: blue;
+    font-weight: bold;
+    border: none;
+    border-radius: 11px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Bootstrap warning tlačidlá */
+  .btn-warning {
+    background-color: #ffd700;
+    color: blue;
+    font-weight: bold;
+  }
+  
+  h3 {
+    color: blue;
+  }
+  
+  /* Responzívne mriežky */
+  @media (max-width: 768px) {
+    header > nav,
+    footer > nav {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    header button,
+    footer button {
+      width: 90%;
+      margin: 5px auto;
+    }
+  }
+
+  /* --------------------------------------------------------------3. Stránka--------------------------------------------------------------------------------------  */
+  /* Custom štýl */
+/*.custom-bg {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00000048;
+  }*/
+  
+  header .btn,
+  footer .btn {
+    font-size: 1.1rem;
+    padding: 8px 50px;
+  }
+  
+  /* Prispôsobenie tlačidiel */
+  button {
+    background-color: #ffd700;
+    color: blue;
+    font-weight: bold;
+    border: none;
+    border-radius: 11px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Bootstrap warning tlačidlá */
+  .btn-warning {
+    background-color: #ffd700;
+    color: blue;
+    font-weight: bold;
+  }
+  
+  h3 {
+    color: blue;
+  }
+  
+  .p3-txt {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .p4-txt {
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .nadpis {
+    color: black;
+    font-weight: bold;
+    font-family: "Franklin Gothic Medium";
+  }
+  
+  /* Responzívne mriežky */
+  @media (max-width: 768px) {
+    header > nav,
+    footer > nav {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    header button,
+    footer button {
+      width: 90%;
+      margin: 5px auto;
+    }
+  }
+
+  /* --------------------------------------------------------------4. Stránka--------------------------------------------------------------------------------------  */
+  /* Custom štýl */
+/*.custom-bg {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00000048;
+  }*/
+  
+  header .btn,
+  footer .btn {
+    font-size: 1.1rem;
+    padding: 8px 50px;
+  }
+  
+  .nadpisy {
+    color: blue;
+  }
+  
+  /* Prispôsobenie tlačidiel */
+  button {
+    background-color: #ffd700;
+    color: blue;
+    font-weight: bold;
+    border: none;
+    border-radius: 11px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Bootstrap warning tlačidlá */
+  .btn-warning {
+    background-color: #ffd700;
+    color: blue;
+    font-weight: bold;
+    align-items: center;
+  }
+  
+  /* Štýly formulára */
+  form input,
+  form button {
+    width: 50%;
+    max-width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  
+  /* Responzívne mriežky */
+  @media (max-width: 768px) {
+    header > nav,
+    footer > nav {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    header button,
+    footer button {
+      width: 90%;
+      margin: 5px auto;
+    }
+  }
+  

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../includes/head', { pageTitle: 'Subscription Confirmation' }) %>
+  <script src="/scripts/userDeleteHandler.js" defer></script>
+</head>
+<body class="bg-light">
+  <!-- Header -->
+  <%- include('../includes/header.ejs') %>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Portal users</h1>
+    <table>
+      <thead>
+        <tr>
+          <% for(const h of head) { %>
+            <th scope="col"><%= h.value %></th>
+          <% } %>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(const user of users) { %>
+          <tr>
+            <% for(const h of head) { %>
+              <%- include('includes/usertable-row', { h, user }) %>
+            <% } %>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+
+    <dialog id="confirmDialog">
+      <h4></h4>
+      <div>
+        <button id="cancelDialogButton">Cancel</button>
+        <button id="confirmDialogButton">Confirm</button>
+      </div>
+    </dialog>
+  </main>
+
+  <!-- Footer -->
+  <%- include('../includes/footer.ejs') %>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="/scripts/userDeleteHandler.js"></script>
+</body>
+</html>

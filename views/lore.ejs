@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head', { pageTitle: 'Lore' }) %>
+  </head>
+  <body class="bg-light">
+    <!-- Header -->
+
+    <%- include("includes/header.ejs") %>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+      <div class="d-flex flex-column flex-lg-row justify-content-between align-items-stretch">
+        <!-- Flexbox 1 -->
+        <div class="col-lg-4 d-flex flex-column justify-content-between align-items-center bg-secondary bg-opacity-50 text-light p-4 rounded mb-4 mb-lg-0">
+          <h3 class="text-dark fw-bold">Chronicle vol.I</h3>
+          <p class="text-dark">
+            Journey through an age of myth and legend, long before the Horde and the Alliance. This definitive tome reveals untold stories about the birth of the cosmos, the rise of ancient empires, and the forces that shaped Azeroth. This is the first in a multipart series exploring the rich lore of the Warcraft universe, from the distant past to the modern era.
+          </p>
+        </div>
+
+        <!-- Centered Image -->
+        <div class="col-lg-4 d-flex justify-content-center align-items-center p-0 mb-4 mb-lg-0">
+          <img src="images/Lore.jpg" alt="Centered Image" class="img-fluid" style="height: 100%; width: 100%; object-fit: cover" />
+        </div>
+
+        <!-- Flexbox 2 -->
+        <div class="col-lg-4 d-flex flex-column justify-content-between align-items-center bg-secondary bg-opacity-50 text-dark p-4 rounded">
+          <h3 class="text-dark fw-bold">Dawn of the Aspects</h3>
+          <p class="p4-txt">
+            THE AGE OF DRAGONS IS OVER. Having lost his great powers, how can he-or any of his kind-still make a difference in the world? The answer lies in the distant past, when savage beasts called proto-dragons ruled the skies. Through a mysterious artefact found near the heart of Northrend, Kalecgos witnesses this violent era and the shocking history of the original Aspects. In their most primitive forms, the future protectors of Azeroth must stand united against Galakrond, a bloodthirsty creature that threatens the existence of their race. But did these mere proto-dragons face such a horrific adversary alone, or did an outside force help them? Kalecgos's discoveries will change everything he knows about the events that led to the ...DAWN OF THE ASPECTS
+          </p>
+        </div>
+      </div>
+
+      <!-- Centered Buttons -->
+      <div class="d-flex justify-content-center gap-4 mt-4" style="font-size: 24px">
+        <button class="btn btn-warning" style="background-color: red; color: black; font-weight: bold; border: none; width: 150px;">Purchase Today!</button>
+        <button class="btn btn-primary" style="background-color: blue; color: rgb(218, 218, 33); font-weight: bold; border: none; width: 150px;">Learn More!</button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <%- include("includes/footer.ejs") %>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

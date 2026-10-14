@@ -1,0 +1,51 @@
+[
+    {
+      "id": "analytics-and-research",
+      "name": "Analytics and Research",
+      "description": "Analyze data and conduct research to improve game performance.",
+      "salary": "80,000 - 100,000 USD/year",
+      "website": "https://careers.blizzard.com/en-us/openings/analyst"
+    },
+    {
+      "id": "art-animation-sound",
+      "name": "Art, Animation and Sound",
+      "description": "Create stunning visuals and immersive audio experiences.",
+      "salary": "70,000 - 90,000 USD/year",
+      "website": "https://careers.blizzard.com/en-us/openings/artist"
+    },
+    {
+      "id": "corporate-operations",
+      "name": "Corporate Operations",
+      "description": "Manage daily operations and ensure smooth workflows.",
+      "salary": "60,000 - 80,000 USD/year",
+      "website": "https://careers.blizzard.com/en-us/openings/operations"
+    },
+    {
+      "id": "community-marketing",
+      "name": "Community, Marketing and Communications",
+      "description": "Engage with the community and promote our games.",
+      "salary": "65,000 - 85,000 USD/year",
+      "website": "https://careers.blizzard.com/en-us/openings/marketing"
+    },
+    {
+      "id": "game-design",
+      "name": "Game Design",
+      "description": "Design gameplay mechanics and create fun experiences.",
+      "salary": "75,000 - 95,000 USD/year",
+      "website": "https://careers.blizzard.com/en-us/openings/designer"
+    },
+    {
+      "id": "engineering-technology",
+      "name": "Engineering and Technology",
+      "description": "Build and maintain the technical infrastructure.",
+      "salary": "90,000 - 110,000 USD/year",
+      "website": "https://careers.blizzard.com/en-us/openings/engineer"
+    },
+    {
+      "id": "ux-visual-design",
+      "name": "UX and Visual Design",
+      "description": "Design intuitive and beautiful user interfaces.",
+      "salary": "70,000 - 90,000 USD/year",
+      "website": "https://careers.blizzard.com/en-us/openings/ux-designer"
+    }
+  ]
